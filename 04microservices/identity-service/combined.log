@@ -52,3 +52,13 @@
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-19T06:29:30.309Z"}
 {"level":"info","message":"Registration endpoint hit...","service":"identity-service","timestamp":"2025-04-19T06:29:30.323Z"}
 {"buffer":{"data":[104,3,66,202,159,216,48,42,41,65,45,185],"type":"Buffer"},"level":"warn","message":"User saved successfully","service":"identity-service","timestamp":"2025-04-19T06:29:30.640Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-19T12:54:11.332Z"}
+{"level":"info","message":"connected to DB","service":"identity-service","timestamp":"2025-04-19T12:54:12.629Z"}
+{"level":"info","message":"Received POST request to /api/auth/register","service":"identity-service","timestamp":"2025-04-19T12:54:32.692Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-19T12:54:32.694Z"}
+{"level":"info","message":"Registration endpoint hit...","service":"identity-service","timestamp":"2025-04-19T12:54:32.712Z"}
+{"buffer":{"data":[104,3,157,8,106,131,19,156,212,61,3,27],"type":"Buffer"},"level":"warn","message":"User saved successfully","service":"identity-service","timestamp":"2025-04-19T12:54:33.035Z"}
+{"level":"info","message":"Received POST request to /api/auth/register","service":"identity-service","timestamp":"2025-04-19T12:56:37.228Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-19T12:56:37.230Z"}
+{"level":"info","message":"Registration endpoint hit...","service":"identity-service","timestamp":"2025-04-19T12:56:37.265Z"}
+{"level":"warn","message":"User already exists","service":"identity-service","timestamp":"2025-04-19T12:56:37.531Z"}
