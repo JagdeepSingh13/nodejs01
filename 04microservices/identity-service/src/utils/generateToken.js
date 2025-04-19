@@ -2,6 +2,10 @@ const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 const RefreshToken = require("../models/RefreshToken");
 
+// we are saving the user in the refresh token not refresh token in user
+// every time user registers, log-in, refresh-token
+// new entry is created
+
 const generateTokens = async (user) => {
   const accessToken = jwt.sign(
     {
