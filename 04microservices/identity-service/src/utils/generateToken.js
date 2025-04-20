@@ -4,9 +4,10 @@ const RefreshToken = require("../models/RefreshToken");
 
 // we are saving the user in the refresh token not refresh token in user
 // every time user registers, log-in, refresh-token
-// new entry is created
+// new entry is created in refresh-token DB
 
 const generateTokens = async (user) => {
+  // used to extract userId in authMiddleware in api-gateway
   const accessToken = jwt.sign(
     {
       userId: user._id,

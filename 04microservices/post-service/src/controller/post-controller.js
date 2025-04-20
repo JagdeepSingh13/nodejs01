@@ -8,6 +8,7 @@ const createPost = async (req, res) => {
     const { content, mediaIds } = req.body;
 
     const newlyCreatedPost = new Post({
+      // from the access-token passed in authHeader
       user: req.user.userId,
       content,
       mediaIds: mediaIds || [],

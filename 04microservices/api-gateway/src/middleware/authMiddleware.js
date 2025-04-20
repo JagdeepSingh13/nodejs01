@@ -1,9 +1,13 @@
 const logger = require("../utils/logger");
 const jwt = require("jsonwebtoken");
 
+// we are putting userId and username while gen. tokens
+
 const validateToken = (req, res, next) => {
   const authHeader = req.headers["authorization"];
+
   // stored as (bearer token)
+  // passing access-token here extracts -> userId and username
   const token = authHeader && authHeader.split(" ")[1];
 
   if (!token) {
