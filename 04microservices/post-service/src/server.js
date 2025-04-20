@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 
 //*** Homework - implement Ip based rate limiting for sensitive endpoints
 
-//routes -> pass redisclient to routes
+//routes -> pass redisclient to routes, will be used in controller
 app.use(
   "/api/posts",
   (req, res, next) => {
@@ -44,8 +44,11 @@ app.use(
 
 app.use(errorHandler);
 
-//unhandled promise rejection
+app.listen(PORT, () => {
+  logger.info(`Post service running on port: ${PORT}`);
+});
 
+//unhandled promise rejection
 process.on("unhandledRejection", (reason, promise) => {
   logger.error("Unhandled Rejection at", promise, "reason:", reason);
 });

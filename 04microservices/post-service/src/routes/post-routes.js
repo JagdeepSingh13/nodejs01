@@ -1,5 +1,5 @@
 const express = require("express");
-const { createPost } = require("../controllers/post-controller");
+const { createPost } = require("../controller/post-controller");
 const { authenticateRequest } = require("../middleware/authMiddleware");
 
 const router = express();
