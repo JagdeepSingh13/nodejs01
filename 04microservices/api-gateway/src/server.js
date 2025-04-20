@@ -8,6 +8,7 @@ const errorHandler = require("./middleware/errorHandler");
 const { rateLimit } = require("express-rate-limit");
 const { RedisStore } = require("rate-limit-redis");
 const proxy = require("express-http-proxy");
+const { validateToken } = require("./middleware/authMiddleware");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -76,6 +77,29 @@ app.use(
   })
 );
 
+// proxy for post-service
+// passing the access token created after login in bearer token
+app.use(
+  "/v1/posts",
+  validateToken,
+  proxy(process.env.POST_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+
+      // the header used in post-service authMiddleware
+      proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from post-service: ${proxyRes.statusCode}`
+      );
+      return proxyResData;
+    },
+  })
+);
+
 app.use(errorHandler);
 
 app.listen(PORT, () => {
@@ -83,5 +107,6 @@ app.listen(PORT, () => {
   logger.info(
     `Identity-Service running on port: ${process.env.IDENTITY_SERVICE_URL}`
   );
+  logger.info(`post-Service running on port: ${process.env.POST_SERVICE_URL}`);
   logger.info(`Redis url: ${process.env.REDIS_URL}`);
 });
