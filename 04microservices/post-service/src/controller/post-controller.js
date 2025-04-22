@@ -6,6 +6,9 @@ const Post = require("../models/Post");
 // to invalidate cache when new post is created
 // otherwise keeps on returning the same cached posts
 async function invalidatePostCache(req, input) {
+  const cachedKey = `post:${input}`;
+  await req.redisClient.del(cachedKey);
+
   const keys = await req.redisClient.keys("posts:*");
   if (keys.length > 0) {
     await req.redisClient.del(keys);
@@ -117,10 +120,34 @@ const getPost = async (req, res) => {
 
 const deletePost = async (req, res) => {
   try {
+    const post = await Post.findOneAndDelete({
+      _id: req.params.id,
+      user: req.user.userId,
+    });
+
+    if (!post) {
+      return res.status(404).json({
+        message: "Post not found",
+        success: false,
+      });
+    }
+
+    //publish post delete method ->
+    // await publishEvent("post.deleted", {
+    //   postId: post._id.toString(),
+    //   userId: req.user.userId,
+    //   mediaIds: post.mediaIds,
+    // });
+
+    // passing in cache in getPost
+    await invalidatePostCache(req, req.params.id);
+    res.json({
+      message: "Post deleted successfully",
+    });
   } catch (e) {
     logger.error("error deleting post", e);
     res.status(500).json({ success: false, message: "error deleting post" });
   }
 };
 
-module.exports = { createPost, getAllPosts, getPost };
+module.exports = { createPost, getAllPosts, getPost, deletePost };
