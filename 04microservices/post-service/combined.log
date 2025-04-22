@@ -55,3 +55,8 @@
 {"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-04-22T16:10:59.829Z"}
 {"level":"info","message":"Post service running on port: 3002","service":"post-service","timestamp":"2025-04-22T16:11:27.681Z"}
 {"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-04-22T16:11:28.011Z"}
+{"level":"info","message":"Post service running on port: 3002","service":"post-service","timestamp":"2025-04-22T16:45:15.559Z"}
+{"level":"info","message":"Post service running on port: 3002","service":"post-service","timestamp":"2025-04-22T16:45:22.664Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-04-22T16:45:23.609Z"}
+{"level":"info","message":"Received GET request to /api/posts/6807bda6cc48789f32be3c79","service":"post-service","timestamp":"2025-04-22T16:51:29.799Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-04-22T16:51:29.800Z"}

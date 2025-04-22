@@ -83,6 +83,30 @@ const getAllPosts = async (req, res) => {
 
 const getPost = async (req, res) => {
   try {
+    const postId = req.params.id;
+    const cachekey = `post:${postId}`;
+    const cachedPost = await req.redisClient.get(cachekey);
+
+    if (cachedPost) {
+      return res.json(JSON.parse(cachedPost));
+    }
+
+    const singlePostDetailsbyId = await Post.findById(postId);
+
+    if (!singlePostDetailsbyId) {
+      return res.status(404).json({
+        message: "Post not found",
+        success: false,
+      });
+    }
+
+    await req.redisClient.setex(
+      cachedPost,
+      3600,
+      JSON.stringify(singlePostDetailsbyId)
+    );
+
+    res.json(singlePostDetailsbyId);
   } catch (e) {
     logger.error("error getting post by ID", e);
     res
@@ -99,4 +123,4 @@ const deletePost = async (req, res) => {
   }
 };
 
-module.exports = { createPost, getAllPosts };
+module.exports = { createPost, getAllPosts, getPost };
