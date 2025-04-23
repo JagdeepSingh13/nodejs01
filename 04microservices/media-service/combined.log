@@ -1,0 +1,6 @@
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T12:36:06.386Z"}
+{"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-04-23T12:37:28.002Z"}
+{"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-04-23T12:37:39.954Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:37:52.123Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:38:05.843Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T12:38:06.370Z"}
