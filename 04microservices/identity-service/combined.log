@@ -174,3 +174,16 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-04-23T12:52:30.400Z"}
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-23T12:52:30.401Z"}
 {"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-04-23T12:52:30.409Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:32:50.598Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:33:03.187Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:33:05.776Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:33:19.799Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:33:26.902Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:33:43.238Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:33:49.050Z"}
+{"level":"info","message":"connected to DB","service":"identity-service","timestamp":"2025-04-23T17:33:49.545Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-04-23T17:34:58.999Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-23T17:34:59.001Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-04-23T17:34:59.009Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:35:24.198Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T17:35:30.394Z"}

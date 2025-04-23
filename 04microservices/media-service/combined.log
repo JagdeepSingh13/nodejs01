@@ -52,3 +52,8 @@
 {"level":"info","message":"File details: name=cplogo.png, type=image/png","service":"media-service","timestamp":"2025-04-23T13:08:17.726Z"}
 {"level":"info","message":"Uploading to cloudinary, START","service":"media-service","timestamp":"2025-04-23T13:08:17.727Z"}
 {"level":"info","message":"Cloudinary upload successfull, Public id: ylynymimrkkhigcqcgea","service":"media-service","timestamp":"2025-04-23T13:08:21.418Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T17:32:57.247Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T17:33:13.535Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T17:33:23.391Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T17:33:35.496Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T17:33:35.903Z"}

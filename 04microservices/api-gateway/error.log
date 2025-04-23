@@ -6,3 +6,4 @@
 {"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-04-20T06:21:21.852Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-04-22T15:54:19.686Z"}
 {"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-04-23T13:03:20.996Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gateway","timestamp":"2025-04-23T17:35:21.603Z"}

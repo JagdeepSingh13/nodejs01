@@ -171,3 +171,17 @@
 {"level":"info","message":"Received POST request to /v1/media/upload","service":"api-gateway","timestamp":"2025-04-23T13:08:17.682Z"}
 {"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-04-23T13:08:17.683Z"}
 {"level":"info","message":"Response received from media-service: 201","service":"api-gateway","timestamp":"2025-04-23T13:08:21.499Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2025-04-23T13:14:13.966Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-04-23T13:14:13.967Z"}
+{"level":"info","message":"Response received from post-service: 201","service":"api-gateway","timestamp":"2025-04-23T13:14:14.146Z"}
+{"level":"info","message":"Received GET request to /v1/posts/all-posts","service":"api-gateway","timestamp":"2025-04-23T13:14:40.989Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-04-23T13:14:40.990Z"}
+{"level":"info","message":"Response received from post-service: 200","service":"api-gateway","timestamp":"2025-04-23T13:14:41.054Z"}
+{"level":"info","message":"API Gateway running on port: 3000","service":"api-gateway","timestamp":"2025-04-23T17:32:44.460Z"}
+{"level":"info","message":"Identity-Service running on port: http://localhost:3001","service":"api-gateway","timestamp":"2025-04-23T17:32:44.467Z"}
+{"level":"info","message":"post-Service running on port: http://localhost:3002","service":"api-gateway","timestamp":"2025-04-23T17:32:44.468Z"}
+{"level":"info","message":"media-Service running on port: http://localhost:3003","service":"api-gateway","timestamp":"2025-04-23T17:32:44.469Z"}
+{"level":"info","message":"Redis url: redis://localhost:6379","service":"api-gateway","timestamp":"2025-04-23T17:32:44.469Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-04-23T17:34:58.928Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-04-23T17:34:58.929Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gateway","timestamp":"2025-04-23T17:35:21.603Z"}
