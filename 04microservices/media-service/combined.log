@@ -57,3 +57,5 @@
 {"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T17:33:23.391Z"}
 {"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T17:33:35.496Z"}
 {"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T17:33:35.903Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-04-23T17:36:24.603Z"}
+{"level":"info","message":"Request body, undefined","service":"media-service","timestamp":"2025-04-23T17:36:24.604Z"}

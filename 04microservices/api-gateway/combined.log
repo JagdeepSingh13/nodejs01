@@ -185,3 +185,9 @@
 {"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-04-23T17:34:58.928Z"}
 {"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-04-23T17:34:58.929Z"}
 {"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gateway","timestamp":"2025-04-23T17:35:21.603Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-04-23T17:35:45.233Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-04-23T17:35:45.234Z"}
+{"level":"info","message":"Response received from identity-service: 200","service":"api-gateway","timestamp":"2025-04-23T17:35:45.681Z"}
+{"level":"info","message":"Received GET request to /v1/media/get","service":"api-gateway","timestamp":"2025-04-23T17:36:24.584Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-04-23T17:36:24.584Z"}
+{"level":"info","message":"Response received from media-service: 200","service":"api-gateway","timestamp":"2025-04-23T17:36:24.646Z"}
