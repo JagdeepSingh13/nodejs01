@@ -10,10 +10,10 @@ const uploadMedia = async (req, res) => {
       res.status(400).json({ success: false, message: "No file found" });
     }
 
-    const { originalName, mimeType, buffer } = req.file;
+    const { originalname, mimetype, buffer } = req.file;
     const userId = req.user.userId;
 
-    logger.info(`File details: name=${originalName}, type=${mimeType}`);
+    logger.info(`File details: name=${originalname}, type=${mimetype}`);
     logger.info("Uploading to cloudinary, START");
 
     const cloudinaryUploadResult = await uploadMediaToCloudinary(req.file);
@@ -23,8 +23,8 @@ const uploadMedia = async (req, res) => {
 
     const newlyCreatedMedia = new Media({
       publicId: cloudinaryUploadResult.public_id,
-      originalName,
-      mimeType,
+      originalName: originalname,
+      mimeType: mimetype,
       url: cloudinaryUploadResult.secure_url,
       userId,
     });
@@ -38,8 +38,8 @@ const uploadMedia = async (req, res) => {
       message: "Media upload successful",
     });
   } catch (e) {
-    logger.error("error uploading post", e);
-    res.status(500).json({ success: false, message: "error uploading post" });
+    logger.error("error uploading media", e);
+    res.status(500).json({ success: false, message: "error uploading media" });
   }
 };
 

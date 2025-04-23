@@ -155,3 +155,22 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-04-22T16:50:56.498Z"}
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-22T16:50:56.499Z"}
 {"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-04-22T16:50:56.506Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:47:01.858Z"}
+{"level":"info","message":"connected to DB","service":"identity-service","timestamp":"2025-04-23T12:47:02.610Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-04-23T12:48:35.963Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-23T12:48:35.965Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-04-23T12:48:35.982Z"}
+{"beforeHandshake":false,"cause":{"address":"159.41.181.96","code":"ETIMEDOUT","errno":-4039,"port":27017,"syscall":"connect"},"connectionGeneration":5,"errorLabelSet":{},"level":"error","message":"Login error occured connect ETIMEDOUT 159.41.181.96:27017","service":"identity-service","stack":"MongoNetworkError: connect ETIMEDOUT 159.41.181.96:27017\n    at TLSSocket.<anonymous> (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\identity-service\\node_modules\\mongodb\\lib\\cmap\\connect.js:285:44)\n    at Object.onceWrapper (node:events:622:26)\n    at TLSSocket.emit (node:events:507:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-04-23T12:49:18.293Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:49:20.909Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:49:27.945Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:49:47.886Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:50:05.889Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:50:39.762Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:51:04.386Z"}
+{"beforeHandshake":false,"cause":{"address":"159.41.181.96","code":"ETIMEDOUT","errno":-4039,"port":27017,"syscall":"connect"},"connectionGeneration":1,"errorLabelSet":{},"level":"error","message":"DB connection error connect ETIMEDOUT 159.41.181.96:27017","service":"identity-service","stack":"MongoNetworkError: connect ETIMEDOUT 159.41.181.96:27017\n    at TLSSocket.<anonymous> (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\identity-service\\node_modules\\mongodb\\lib\\cmap\\connect.js:285:44)\n    at Object.onceWrapper (node:events:622:26)\n    at TLSSocket.emit (node:events:507:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-04-23T12:51:47.445Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:51:54.348Z"}
+{"level":"info","message":"Identity service running on port: 3001","service":"identity-service","timestamp":"2025-04-23T12:52:14.750Z"}
+{"level":"info","message":"connected to DB","service":"identity-service","timestamp":"2025-04-23T12:52:15.101Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-04-23T12:52:30.400Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-23T12:52:30.401Z"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2025-04-23T12:52:30.409Z"}

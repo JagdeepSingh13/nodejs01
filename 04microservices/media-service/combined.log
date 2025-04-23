@@ -4,3 +4,51 @@
 {"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:37:52.123Z"}
 {"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:38:05.843Z"}
 {"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T12:38:06.370Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:47:10.885Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T12:47:12.395Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:57:35.284Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:57:44.002Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:57:55.090Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:58:14.730Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:58:22.983Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:58:43.122Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:58:49.142Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:59:06.329Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:59:14.751Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:59:25.378Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T12:59:43.239Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:00:10.974Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:00:33.027Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:00:53.596Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T13:00:54.054Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:02:12.524Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:02:33.994Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:02:40.213Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:02:46.688Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:02:59.464Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T13:02:59.867Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-04-23T13:04:22.238Z"}
+{"level":"info","message":"Request body, undefined","service":"media-service","timestamp":"2025-04-23T13:04:22.239Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2025-04-23T13:04:22.269Z"}
+{"level":"error","message":"error uploading post originalName is not defined","service":"media-service","stack":"ReferenceError: originalName is not defined\n    at uploadMedia (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\src\\controller\\media-controller.js:16:39)\n    at Layer.handleRequest (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\router\\lib\\route.js:157:13)\n    at C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\src\\routes\\media-routes.js:45:7\n    at done (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\multer\\lib\\make-middleware.js:47:7)\n    at indicateDone (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\multer\\lib\\make-middleware.js:51:68)\n    at Multipart.<anonymous> (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\multer\\lib\\make-middleware.js:168:7)\n    at Multipart.emit (node:events:507:28)\n    at emitCloseNT (node:internal/streams/destroy:148:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)","timestamp":"2025-04-23T13:04:22.272Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:04:41.684Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:04:50.686Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:04:55.611Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:05:00.899Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T13:05:23.481Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:05:25.542Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T13:05:28.069Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-04-23T13:05:36.950Z"}
+{"level":"info","message":"Request body, undefined","service":"media-service","timestamp":"2025-04-23T13:05:36.952Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2025-04-23T13:05:36.974Z"}
+{"level":"error","message":"error uploading media originalName is not defined","service":"media-service","stack":"ReferenceError: originalName is not defined\n    at uploadMedia (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\src\\controller\\media-controller.js:16:39)\n    at Layer.handleRequest (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\router\\lib\\route.js:157:13)\n    at C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\src\\routes\\media-routes.js:45:7\n    at done (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\multer\\lib\\make-middleware.js:47:7)\n    at indicateDone (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\multer\\lib\\make-middleware.js:51:68)\n    at Multipart.<anonymous> (C:\\Users\\hp\\Desktop\\nodejs01\\04microservices\\media-service\\node_modules\\multer\\lib\\make-middleware.js:168:7)\n    at Multipart.emit (node:events:507:28)\n    at emitCloseNT (node:internal/streams/destroy:148:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)","timestamp":"2025-04-23T13:05:36.977Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:07:30.519Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:07:50.059Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2025-04-23T13:08:05.863Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-04-23T13:08:06.782Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-04-23T13:08:17.701Z"}
+{"level":"info","message":"Request body, undefined","service":"media-service","timestamp":"2025-04-23T13:08:17.702Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2025-04-23T13:08:17.725Z"}
+{"level":"info","message":"File details: name=cplogo.png, type=image/png","service":"media-service","timestamp":"2025-04-23T13:08:17.726Z"}
+{"level":"info","message":"Uploading to cloudinary, START","service":"media-service","timestamp":"2025-04-23T13:08:17.727Z"}
+{"level":"info","message":"Cloudinary upload successfull, Public id: ylynymimrkkhigcqcgea","service":"media-service","timestamp":"2025-04-23T13:08:21.418Z"}

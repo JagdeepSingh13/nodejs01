@@ -143,3 +143,31 @@
 {"level":"info","message":"Received GET request to /v1/posts/6807bda6cc48789f32be3c79","service":"api-gateway","timestamp":"2025-04-22T16:51:29.720Z"}
 {"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-04-22T16:51:29.721Z"}
 {"level":"info","message":"Response received from post-service: 200","service":"api-gateway","timestamp":"2025-04-22T16:51:29.862Z"}
+{"level":"info","message":"API Gateway running on port: 3000","service":"api-gateway","timestamp":"2025-04-23T12:45:01.762Z"}
+{"level":"info","message":"Identity-Service running on port: http://localhost:3001","service":"api-gateway","timestamp":"2025-04-23T12:45:01.770Z"}
+{"level":"info","message":"post-Service running on port: http://localhost:3002","service":"api-gateway","timestamp":"2025-04-23T12:45:01.771Z"}
+{"level":"info","message":"media-Service running on port: http://localhost:3003","service":"api-gateway","timestamp":"2025-04-23T12:45:01.771Z"}
+{"level":"info","message":"Redis url: redis://localhost:6379","service":"api-gateway","timestamp":"2025-04-23T12:45:01.772Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-04-23T12:48:35.886Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-04-23T12:48:35.887Z"}
+{"level":"info","message":"Response received from identity-service: 500","service":"api-gateway","timestamp":"2025-04-23T12:49:18.313Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-04-23T12:52:30.299Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-04-23T12:52:30.300Z"}
+{"level":"info","message":"Response received from identity-service: 200","service":"api-gateway","timestamp":"2025-04-23T12:52:30.743Z"}
+{"level":"info","message":"Received POST request to /v1/media/upload","service":"api-gateway","timestamp":"2025-04-23T13:03:20.987Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-04-23T13:03:20.987Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-04-23T13:03:20.996Z"}
+{"level":"info","message":"API Gateway running on port: 3000","service":"api-gateway","timestamp":"2025-04-23T13:04:07.961Z"}
+{"level":"info","message":"Identity-Service running on port: http://localhost:3001","service":"api-gateway","timestamp":"2025-04-23T13:04:07.972Z"}
+{"level":"info","message":"post-Service running on port: http://localhost:3002","service":"api-gateway","timestamp":"2025-04-23T13:04:07.974Z"}
+{"level":"info","message":"media-Service running on port: http://localhost:3003","service":"api-gateway","timestamp":"2025-04-23T13:04:07.977Z"}
+{"level":"info","message":"Redis url: redis://localhost:6379","service":"api-gateway","timestamp":"2025-04-23T13:04:07.978Z"}
+{"level":"info","message":"Received POST request to /v1/media/upload","service":"api-gateway","timestamp":"2025-04-23T13:04:22.200Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-04-23T13:04:22.201Z"}
+{"level":"info","message":"Response received from media-service: 500","service":"api-gateway","timestamp":"2025-04-23T13:04:22.284Z"}
+{"level":"info","message":"Received POST request to /v1/media/upload","service":"api-gateway","timestamp":"2025-04-23T13:05:36.927Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-04-23T13:05:36.930Z"}
+{"level":"info","message":"Response received from media-service: 500","service":"api-gateway","timestamp":"2025-04-23T13:05:36.986Z"}
+{"level":"info","message":"Received POST request to /v1/media/upload","service":"api-gateway","timestamp":"2025-04-23T13:08:17.682Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-04-23T13:08:17.683Z"}
+{"level":"info","message":"Response received from media-service: 201","service":"api-gateway","timestamp":"2025-04-23T13:08:21.499Z"}
