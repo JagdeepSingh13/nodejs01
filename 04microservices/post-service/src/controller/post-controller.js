@@ -1,6 +1,7 @@
 const logger = require("../utils/logger");
 const { validateCreatePost } = require("../utils/validation");
 const Post = require("../models/Post");
+const { publishEvent } = require("../utils/rabbitmq");
 
 // with-cache -> load time is very less
 // to invalidate cache when new post is created
@@ -133,11 +134,11 @@ const deletePost = async (req, res) => {
     }
 
     //publish post delete method ->
-    // await publishEvent("post.deleted", {
-    //   postId: post._id.toString(),
-    //   userId: req.user.userId,
-    //   mediaIds: post.mediaIds,
-    // });
+    await publishEvent("post.deleted", {
+      postId: post._id.toString(),
+      userId: req.user.userId,
+      mediaIds: post.mediaIds,
+    });
 
     // passing in cache in getPost
     await invalidatePostCache(req, req.params.id);
