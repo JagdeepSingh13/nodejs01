@@ -4,6 +4,7 @@ const Search = require("../models/Search");
 const searchPostController = async (req, res) => {
   logger.info("Search end-point hit...");
   try {
+    // send query as "?query={text to be searched}" in URL
     const { query } = req.query;
 
     const results = await Search.find(

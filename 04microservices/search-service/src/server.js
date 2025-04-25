@@ -45,6 +45,7 @@ async function startServer() {
 
     // consume the events
     await consumeEvent("post.created", handlePostCreated);
+    await consumeEvent("post.deleted", handlePostDeleted);
 
     app.listen(PORT, () => {
       logger.info(`Search service is running on port: ${PORT}`);
