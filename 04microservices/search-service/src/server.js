@@ -41,11 +41,16 @@ app.use(errorHandler);
 
 async function startServer() {
   try {
+    connectToRabbitMQ();
+
+    // consume the events
+    await consumeEvent("post.created", handlePostCreated);
+
     app.listen(PORT, () => {
       logger.info(`Search service is running on port: ${PORT}`);
     });
   } catch (e) {
-    logger.error(e, "Failed to start search service");
+    logger.error(e, "Failed to start search-service");
     process.exit(1);
   }
 }
