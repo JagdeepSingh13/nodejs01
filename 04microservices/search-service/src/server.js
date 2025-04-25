@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3004;
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => logger.info("Connected to mongodb"))
-  .catch((e) => logger.error("Mongo connection error", e));
+  .catch((e) => logger.error("Mongodb connection error", e));
 
 const redisClient = new Redis(process.env.REDIS_URL);
 
@@ -34,6 +34,8 @@ app.use((req, res, next) => {
   logger.info(`Request body, ${req.body}`);
   next();
 });
+
+app.use("/api/search", searchRoutes);
 
 app.use(errorHandler);
 

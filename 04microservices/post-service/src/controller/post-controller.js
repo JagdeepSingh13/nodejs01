@@ -36,6 +36,15 @@ const createPost = async (req, res) => {
       mediaIds: mediaIds || [],
     });
     await newlyCreatedPost.save();
+
+    // to save it in serach-db
+    await publishEvent("post.created", {
+      postId: newlyCreatedPost._id.toString(),
+      userId: newlyCreatedPost.user.toString(),
+      content: newlyCreatedPost.content,
+      createdAt: newlyCreatedPost.createdAt,
+    });
+
     // invalidate cache just after saving the new post
     await invalidatePostCache(req, newlyCreatedPost._id.toString());
 
